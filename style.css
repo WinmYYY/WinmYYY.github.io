@@ -1,0 +1,394 @@
+@font-face{
+	font-family: font3;
+	src: url(fonts/font4.ttf)
+}
+@font-face{
+	font-family: font4;
+	src: url(fonts/font5.ttf);
+}
+body{
+	margin: 0;
+	font-family: font3;
+	min-width: 600px;
+}
+#top-menu{
+	position: sticky;
+	top: 0;	
+	height:50px;
+	background-color: #000;
+	z-index: 1;
+}
+#top-menu .side{
+	height: 100%;
+	position: absolute;
+}
+#top-menu .left{
+	left: 0;
+}
+#top-menu .right{
+	right: 0;
+}
+#top-menu a{
+	text-decoration: none;
+}
+.tm-btn{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	color: #3af;
+	height: 20px;
+	line-height: 20px;
+	font-size: 20px;
+	padding: 15px;
+	font-family: font4;
+}
+
+.tm-btn-sbm{
+	height: 0;
+	overflow: hidden;
+	top: 100%;
+	position: absolute;
+	left: 0;
+	min-width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	transition-duration: 200ms;
+	transition-property: height;
+}
+.tm-btn:hover .tm-btn-sbm{
+	height: 100px;
+}
+.tm-btn-sbn .tm-btn{
+	position: 
+	left: 0;
+	display: block;
+}
+.tm-btn:hover .tm-btn-arr{
+	transform: rotate(180deg);
+}
+.tm-btn-arr{
+	height: 100%;
+	vertical-align: middle;
+	transition-duration: 200ms;
+}
+.tm-btn img{
+	height: 100%;
+	vertical-align: middle;
+	transition-duration: 200ms;
+}
+.box{
+	position: relative;
+	width: 100%;
+	font-size: 0;
+}
+#box1 video{
+	width: 100%;
+}
+#box1 .inner{
+    width: 500px;
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+}
+#box1 .inner-img{
+	width: 100%;
+}
+#box1 .big-text{
+	font-size: 60px;
+	text-align: center;
+	color: #df0;
+}
+#box1 .inner a{
+	text-decoration-line: none;
+}
+#box1 .inner .btn{
+	position: relative;
+	background-color: #3af;
+	font-size: 40px;
+	color: #3af;
+	text-align: center;
+	font-size: 30px;
+	width: 150px;
+	height: 30px;
+	padding: 13px;
+	border: solid 2px #27a;
+	margin: auto;
+	box-shadow: 0 0 10px #3af inset;
+	text-shadow: 0 0 10px #3af;
+	font-family: font4;
+	background-color: rgba(223, 256, 0, 0.4);
+	transition-duration: 300ms;
+	transition-property: color, text-shadow, box-shadow;
+}
+#box1 .inner .btn:hover{
+	border-color: #3af;sss
+	color: #3af;
+	text-shadow: 0 0 10px #3af;
+	box-shadow: 0 0 15px #3af inset;
+}
+.btn .line{
+	left: 50%;
+	right: 50%;
+	position: absolute;
+	height: 2px;
+	box-shadow: 0 0 15px #3af;
+	background-image: linear-gradient(to right, 
+		rgba(255,170,225,0.5),
+		rgba(51,225,170,1),
+		rgba(51,170,255,0.5));
+	transition-duration: 400ms;
+	z-index: 100;
+}
+.btn:hover .line{
+	left: 0;
+	right: 0;
+
+}
+.btn .line-top{
+	top: -1px;
+}
+.btn .line-bottom{
+	bottom: -1px;
+}
+#box2{
+	position: relative;
+	width: 100%;
+    height: 720px;
+    background-color: #3af;
+}
+#box2 .left{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 66%;
+	height: 100%;
+	background-color: #3af;
+}
+#box2 .right{
+	position: absolute;
+	right: 0; 
+	top: 0;
+	width: 34%;
+	height: 100%;
+	background-color: #3af;
+}
+#box2 table{
+	width: 100%;
+	height: 100%;
+}
+#box2 td{
+	height: 50%;
+	width: 50%;
+	overflow: hidden;
+	position: relative;
+}
+#box2 .content{
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	background-position: center center;
+	transition-duration: 200ms;
+	transition-property: transform;
+}
+#box2 td:hover .content{
+	transform: scale(1.1);
+}
+#box2 .content:hover{
+	transform: scale(1.1);
+}
+#box2 .caption{
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	height: 50%;
+	background-image: linear-gradient(to bottom,
+		rgba(0,0,0,0),
+		rgba(0,0,0,0.8),
+		rgba(0,0,0,0.95)
+		);
+}
+#box2 .content1{
+	background-image: url("img/5.jpg");
+}
+#box2 .content2{
+	background-image: url("img/img.3.jpg");
+}
+#box2 .content3{
+	background-image: url("img/1.jpg");
+}
+#box2 .content4{
+	background-image: url("img/2.jpg");
+}
+#box2 .list{
+	width: 80%;
+	padding-left: 10%;
+	margin-top: 50px;
+	margin-left: 10%
+	margin-right: 10%;
+	height: calc(100% - 100px)
+	box-shadow: 0 0 10px #000 inset;
+	overflow-x: hidden;
+}
+#box2 .li-el{
+	height: 100px;
+	width: 100%;
+	background-color: #222;
+	margin-bottom: 30px;
+	position: relative;
+}
+/*::-webkit-scrollbar{
+	background-color: #000;
+}
+::-webkit-scrollbar-thumb{
+	background-color: #222;
+	border-radius: 50px;
+	box-shadow: 0 0 5px #000 inset;
+}*/
+/*#box2 .list::-webkit-scrollbar{
+	background-color: #000;
+}
+#box2 .list::-webkit-scrollbar-thumb{
+	background-color: #331;
+	border-radius: 50px; 
+}*/
+#box2 .caption .text{
+	color: #fff;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-family: font3;
+	font-size: 30px;
+}
+#box2 .caption .img{
+	height: 80px;
+	width: 80px;
+	margin-bottom: 20px; 
+	background-size: cover;
+}
+#box2-left-img{
+	background-image: url("img/m4.png");
+}
+#box2-left-img2{
+	background-image: url("img/m4.png");
+}
+#box2-left-img3{
+	background-image: url("img/m4.png");
+}
+#box2-left-img4{
+	background-image: url("img/m4.png");
+}
+#box2 .list audio{
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translateY(-50%);
+}
+#box3{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #111;
+}	
+#box3 iframe{
+	height: 720px;
+	width: 1280px;
+	position: relative; 
+	left: 50%;
+	transform: translateX(-50%);
+}
+#footer{
+	padding: 50px;
+	background-color: #222;
+	color: #aaa;
+	font-size: 20px;
+}
+#footer link{
+	display: inline-block;
+	margin: 10px;
+}
+#footer a{
+	color: #aaa;
+	text-decoration-line: none;
+}
+#footer a:hover{
+	text-decoration-line: underline;
+}
+@media(max-width: 7680px){
+	#box2{
+		height: 2160px;
+	}
+	#box2 .caption .text{
+		font-size: 32px;
+	}
+	#box2 .caption .img{
+		height:1280px;
+		width:1280px;
+	}
+	#box3 iframe{
+		height: 2160px;
+		width: 3840px;
+	}
+}
+@media(max-width: 3840px){
+	#box2{
+		height: 1080px;
+	}
+	#box2 .caption .text{
+		font-size: 60px;
+	}
+	#box2 .caption .img{
+		height:160px;
+		width:160px;
+	}
+	#box3 iframe{
+		height: 1080px;
+		width: 1920px;
+	}
+}
+@media(max-width: 1920px){
+	#box3 iframe{
+		height: 720px;
+		width: 1280px;
+	}
+	#box2 .caption .text{
+		font-size: 30px;
+	}
+	#box2 .caption .img{
+		height: 80px;
+		width: 80px;
+	}
+}
+@media(max-width: 1385px){
+	#box2{
+		height: 1440px;
+
+	}
+	#box2 .left{
+		position: relative;
+		width: 100%;
+		height: 50%;
+	}
+	#box2 .right{
+		position: relative;
+		width: 100%;
+		height: 50%;
+		top: 50%;
+	}
+	#top-menu .right{
+		display: none;
+	}
+}
+@media(max-width: 1250px){
+	
+}
+@media(max-width: 720px){
+	#box2 .left td:nth-child(2){
+		display: none;
+	}
+}
+@media(max-width: 600px){
+	#top-menu .right{
+		display: none;
+	}
+	body{
+		overflow-x: scroll;
+	}
+}
